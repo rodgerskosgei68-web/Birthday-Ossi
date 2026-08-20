@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Neema 💜</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html,body{
+    width:100%;
+    min-height:100%;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    min-height:100vh;
+
+    background:
+        radial-gradient(
+            circle at 20% 25%,
+            #6335d8 0%,
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 80% 80%,
+            #164fd6 0%,
+            transparent 30%
+        ),
+        #080d35;
+
+    color:#fff;
+    overflow-x:hidden;
+}
+
+
+/* =========================
+   STARS
+========================= */
+
+.stars{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+
+    background-image:
+        radial-gradient(#ffffff 1px,transparent 1px),
+        radial-gradient(#ffffff 1px,transparent 1px);
+
+    background-size:
+        80px 80px,
+        120px 120px;
+
+    background-position:
+        0 0,
+        40px 40px;
+
+    opacity:.25;
+
+    animation:starsMove 20s linear infinite;
+}
+
+@keyframes starsMove{
+
+    from{
+        transform:translateY(0);
+    }
+
+    to{
+        transform:translateY(-80px);
+    }
+
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container{
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:25px 15px;
+}
+
+
+.card{
+    width:100%;
+    max-width:680px;
+
+    background:#fff;
+    color:#17182b;
+
+    border-radius:32px;
+
+    overflow:hidden;
+
+    box-shadow:
+        0 25px 80px rgba(0,0,0,.45);
+
+    position:relative;
+}
+
+
+/* =========================
+   TOP SECTION
+========================= */
+
+.top{
+
+    height:270px;
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    padding:25px;
+
+    background:
+
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(255,255,255,.15),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 10% 90%,
+            rgba(255,255,255,.15),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            135deg,
+            #5630df,
+            #3976e9
+        );
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+
+.top:before,
+.top:after{
+
+    content:"";
+
+    position:absolute;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+}
+
+
+.top:before{
+
+    width:270px;
+    height:270px;
+
+    right:-90px;
+    top:-100px;
+}
+
+
+.top:after{
+
+    width:220px;
+    height:220px;
+
+    left:-100px;
+    bottom:-130px;
+}
+
+
+/* HEART */
+
+.heart{
+
+    font-size:75px;
+
+    animation:
+        heartbeat 1.5s ease-in-out infinite;
+
+    filter:
+        drop-shadow(
+            0 5px 10px rgba(0,0,0,.25)
+        );
+
+    z-index:2;
+}
+
+
+@keyframes heartbeat{
+
+    0%,100%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.12);
+    }
+
+}
+
+
+.top h1{
+
+    font-size:34px;
+
+    margin-top:12px;
+
+    z-index:2;
+}
+
+
+.top p{
+
+    font-size:18px;
+
+    margin-top:14px;
+
+    opacity:.9;
+
+    z-index:2;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form-section{
+
+    padding:
+        40px
+        30px
+        55px;
+}
+
+
+.label{
+
+    color:#6339c9;
+
+    font-weight:bold;
+
+    letter-spacing:2px;
+
+    font-size:18px;
+
+    margin-bottom:30px;
+}
+
+
+.name-title{
+
+    font-size:40px;
+
+    margin-bottom:8px;
+}
+
+
+.subtitle{
+
+    color:#777;
+
+    margin-bottom:30px;
+
+    font-size:17px;
+}
+
+
+input{
+
+    width:100%;
+
+    height:60px;
+
+    border:
+        1px solid #ddd;
+
+    border-radius:15px;
+
+    padding:
+        0 18px;
+
+    font-size:17px;
+
+    outline:none;
+
+    margin-bottom:15px;
+
+    transition:.3s;
+}
+
+
+input:focus{
+
+    border-color:#6039df;
+
+    box-shadow:
+        0 0 0 4px
+        rgba(96,57,223,.1);
+}
+
+
+button{
+
+    width:100%;
+
+    height:60px;
+
+    border:0;
+
+    border-radius:15px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #6430dc,
+            #3375e8
+        );
+
+    color:#fff;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    margin-top:2px;
+
+    box-shadow:
+        0 12px 25px
+        rgba(79,53,210,.25);
+
+    transition:.25s;
+}
+
+
+button:hover{
+
+    transform:
+        translateY(-2px);
+}
+
+
+button:active{
+
+    transform:
+        scale(.98);
+}
+
+
+/* ERROR MESSAGE */
+
+.error{
+
+    color:#e33c5a;
+
+    text-align:center;
+
+    margin-top:15px;
+
+    display:none;
+
+    font-weight:bold;
+}
+
+
+/* =========================
+   SCREENS
+========================= */
+
+.screen{
+
+    display:none;
+}
+
+
+.screen.active{
+
+    display:block;
+
+    animation:
+        fadeIn .8s ease;
+}
+
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateY(25px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateY(0);
+    }
+
+}
+
+
+/* =========================
+   SCREEN 2
+========================= */
+
+.surprise{
+
+    min-height:650px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    padding:40px 25px;
+}
+
+
+.big-heart{
+
+    font-size:110px;
+
+    animation:
+        float 3s ease-in-out infinite;
+}
+
+
+@keyframes float{
+
+    0%,100%{
+
+        transform:
+            translateY(0);
+    }
+
+    50%{
+
+        transform:
+            translateY(-18px);
+    }
+
+}
+
+
+.surprise h2{
+
+    font-size:40px;
+
+    margin:
+        20px 0
+        15px;
+}
+
+
+.surprise p{
+
+    color:#666;
+
+    font-size:19px;
+
+    line-height:1.7;
+
+    max-width:520px;
+}
+
+
+.continue{
+
+    max-width:400px;
+
+    margin-top:30px;
+}
+
+
+/* =========================
+   SCREEN 3
+========================= */
+
+.message{
+
+    padding:
+        45px 30px;
+
+    text-align:center;
+}
+
+
+.message h2{
+
+    color:#5d35d5;
+
+    font-size:34px;
+
+    margin-bottom:20px;
+}
+
+
+.message p{
+
+    color:#555;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+}
+
+
+/* PHOTO PLACEHOLDER */
+
+.photo-box{
+
+    width:100%;
+
+    height:280px;
+
+    border-radius:22px;
+
+    margin:25px 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            #6236db,
+            #3674e8
+        );
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:70px;
+
+    box-shadow:
+        0 15px 35px
+        rgba(61,49,180,.25);
+}
+
+
+/* =========================
+   FINAL SCREEN
+========================= */
+
+.final{
+
+    min-height:600px;
+
+    padding:
+        50px 30px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #5130c7,
+            transparent 45%
+        );
+}
+
+
+.final h2{
+
+    font-size:42px;
+
+    margin:
+        20px 0;
+}
+
+
+.final p{
+
+    font-size:19px;
+
+    line-height:1.8;
+
+    max-width:520px;
+}
+
+
+/* =========================
+   CONFETTI
+========================= */
+
+.confetti{
+
+    position:fixed;
+
+    top:-20px;
+
+    font-size:25px;
+
+    animation:
+        fall 5s linear forwards;
+
+    pointer-events:none;
+
+    z-index:999;
+}
+
+
+@keyframes fall{
+
+    to{
+
+        transform:
+            translateY(110vh)
+            rotate(720deg);
+
+        opacity:0;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:500px){
+
+    .top{
+
+        height:270px;
+    }
+
+
+    .top h1{
+
+        font-size:32px;
+    }
+
+
+    .top p{
+
+        font-size:16px;
+    }
+
+
+    .form-section{
+
+        padding:
+            35px
+            28px
+            50px;
+    }
+
+
+    .name-title{
+
+        font-size:36px;
+    }
+
+
+    .surprise h2{
+
+        font-size:34px;
+    }
+
+
+    .message h2{
+
+        font-size:30px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<div class="stars"></div>
+
+
+<div class="container">
+
+
+<div class="card">
+
+
+<!-- =====================================
+     SCREEN 1 — LOGIN
+===================================== -->
+
+<section
+    id="screen1"
+    class="screen active"
+>
+
+
+    <div class="top">
+
+
+        <div class="heart">
+            💜
+        </div>
+
+
+        <h1>
+            For Neema
+        </h1>
+
+
+        <p>
+            A little journey made especially
+            for you is waiting inside.
+        </p>
+
+
+    </div>
+
+
+    <div class="form-section">
+
+
+        <div class="label">
+            ✦ A LITTLE SURPRISE
+        </div>
+
+
+        <h2 class="name-title">
+            Neema 💜
+        </h2>
+
+
+        <p class="subtitle">
+            Enter your name to unlock something special.
+        </p>
+
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Your name"
+            autocomplete="off"
+        >
+
+
+        <input
+            type="number"
+            id="age"
+            placeholder="Enter ur age to continue"
+            autocomplete="off"
+        >
+
+
+        <button
+            onclick="openSurprise()"
+        >
+            Open Surprise ✨
+        </button>
+
+
+        <p
+            id="error"
+            class="error"
+        >
+            Oops! That's not the right answer 💜
+        </p>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================
+     SCREEN 2 — WELCOME
+===================================== -->
+
+<section
+    id="screen2"
+    class="screen"
+>
+
+
+    <div class="surprise">
+
+
+        <div class="big-heart">
+            💜
+        </div>
+
+
+        <h2>
+            Welcome,
+            <span id="displayName">
+                Neema
+            </span>
+            ✨
+        </h2>
+
+
+        <p>
+            You made it through the first door...
+            but there's still something waiting
+            for you.
+        </p>
+
+
+        <button
+            class="continue"
+            onclick="nextScreen(3)"
+        >
+            Continue 💫
+        </button>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================
+     SCREEN 3 — MESSAGE
+===================================== -->
+
+<section
+    id="screen3"
+    class="screen"
+>
+
+
+    <div class="message">
+
+
+        <h2>
+            A Little Message 💜
+        </h2>
+
+
+        <p>
+            Dear
+            <span id="displayName2">
+                Neema
+            </span>,
+        </p>
+
+
+        <p>
+            This little page was created just
+            to put a smile on your face.
+            Sometimes the simplest surprises
+            can make an ordinary day feel
+            a little more special.
+        </p>
+
+
+        <div class="photo-box">
+
+            📸💜
+
+        </div>
+
+
+        <p>
+            And guess what...
+            we're not finished yet. ✨
+        </p>
+
+
+        <button
+            onclick="nextScreen(4)"
+        >
+            One More Surprise 🎁
+        </button>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================
+     SCREEN 4 — FINAL
+===================================== -->
+
+<section
+    id="screen4"
+    class="screen"
+>
+
+
+    <div class="final">
+
+
+        <div class="big-heart">
+            💜
+        </div>
+
+
+        <h2>
+            For You, Neema ✨
+        </h2>
+
+
+        <p>
+            May your days be filled with
+            beautiful moments, genuine smiles
+            and memories worth keeping forever.
+        </p>
+
+
+        <p
+            style="margin-top:20px;"
+        >
+            Happy Birthday! 🎂🎉💜
+        </p>
+
+
+        <button
+            class="continue"
+            onclick="celebrate()"
+        >
+            Celebrate 🎉
+        </button>
+
+
+    </div>
+
+
+</section>
+
+
+</div>
+
+</div>
+
+
+
+<script>
+
+
+/* =====================================
+   FIXED LOGIN
+===================================== */
+
+function openSurprise(){
+
+
+    const name =
+        document
+        .getElementById("name")
+        .value
+        .trim();
+
+
+    const age =
+        document
+        .getElementById("age")
+        .value
+        .trim();
+
+
+    const error =
+        document
+        .getElementById("error");
+
+
+    /*
+       THESE ARE THE FIXED ANSWERS
+    */
+
+    const correctName =
+        "Neema";
+
+    const correctAge =
+        "20";
+
+
+    /*
+       CHECK LOGIN
+    */
+
+    if(
+        name.toLowerCase()
+        !==
+        correctName.toLowerCase()
+
+        ||
+
+        age
+        !==
+        correctAge
+    ){
+
+        error.textContent =
+            "Oops! That's not the right answer 💜";
+
+        error.style.display =
+            "block";
+
+        return;
+    }
+
+
+    /*
+       CORRECT LOGIN
+    */
+
+    error.style.display =
+        "none";
+
+
+    document
+        .getElementById("displayName")
+        .textContent =
+        correctName;
+
+
+    document
+        .getElementById("displayName2")
+        .textContent =
+        correctName;
+
+
+    /*
+       MOVE TO SCREEN 2
+    */
+
+    nextScreen(2);
+
+}
+
+
+
+/* =====================================
+   CHANGE SCREEN
+===================================== */
+
+function nextScreen(number){
+
+
+    document
+        .querySelectorAll(".screen")
+        .forEach(
+            screen => {
+
+                screen.classList.remove(
+                    "active"
+                );
+
+            }
+        );
+
+
+    document
+        .getElementById(
+            "screen" + number
+        )
+        .classList.add(
+            "active"
+        );
+
+
+    window.scrollTo({
+
+        top:0,
+
+        behavior:"smooth"
+
+    });
+
+}
+
+
+
+/* =====================================
+   CONFETTI
+===================================== */
+
+function celebrate(){
+
+
+    const emojis = [
+
+        "💜",
+        "💖",
+        "✨",
+        "🎉",
+        "🎊",
+        "💫",
+        "🎂"
+
+    ];
+
+
+    for(
+        let i = 0;
+        i < 50;
+        i++
+    ){
+
+
+        const confetti =
+            document.createElement(
+                "div"
+            );
+
+
+        confetti.className =
+            "confetti";
+
+
+        confetti.textContent =
+            emojis[
+                Math.floor(
+                    Math.random()
+                    *
+                    emojis.length
+                )
+            ];
+
+
+        confetti.style.left =
+            Math.random()
+            *
+            100
+            +
+            "vw";
+
+
+        confetti.style.animationDuration =
+            (
+                3
+                +
+                Math.random()
+                *
+                4
+            )
+            +
+            "s";
+
+
+        confetti.style.fontSize =
+            (
+                18
+                +
+                Math.random()
+                *
+                18
+            )
+            +
+            "px";
+
+
+        document.body.appendChild(
+            confetti
+        );
+
+
+        setTimeout(
+
+            () => {
+
+                confetti.remove();
+
+            },
+
+            7000
+
+        );
+
+    }
+
+}
+
+</script>
+
+
+</body>
+  </html>
